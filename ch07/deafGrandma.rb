@@ -2,8 +2,7 @@ command = gets.chomp
 while command != 'BYE'
   if command != command.upcase
   	puts 'HUH?!  SPEAK UP, SONNY!'
-  end
-  if command == command.upcase
+  else 
   	year= (rand(21)) +1930
   	puts 'NO, NOT SINCE ' +year.to_s+ '!'
   end
