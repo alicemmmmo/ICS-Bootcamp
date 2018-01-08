@@ -1,18 +1,15 @@
 def ask question
-while true
-puts question
-reply = gets.chomp.downcase
-  if (reply == 'yes' || reply == 'no')
-    if reply == 'yes'
-    return true
+  while true
+    puts question
+    reply = gets.chomp.downcase
+    if reply == 'yes' 
+      return true
+    elsif reply == 'no'
+      return false
     else
-    return false
+      puts 'Please answer "yes" or "no".'
     end
-    break
-  else
-  puts 'Please answer "yes" or "no".'
   end
-end
 end
 
 puts 'Hello, and thank you for...'
